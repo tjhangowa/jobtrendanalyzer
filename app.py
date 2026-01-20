@@ -4,8 +4,9 @@ import pandas as pd
 # 1. SETUP THE PAGE
 st.set_page_config(page_title="Job Market Analyzer", page_icon="📊")
 st.title("📊 Remote Job Market Analyzer")
-st.subheader("By Tenzin Jhangowa")
+st.badge("by: Tenzin Jhangowa")
 st.write("This dashboard analyzes the latest backend jobs from WeWorkRemotely.")
+st.link_button("WeWorkRemotely", url="https://www.weworkremotely.com")
 
 # 2. LOAD THE DATA
 # We use Pandas to read the CSV file you created in the previous step
