@@ -22,6 +22,16 @@ except FileNotFoundError:
     st.error("Could not find 'real_jobs.csv'. Please run scraper.py first!")
     st.stop()
 
+csv_data = df.to_csv(index=False).encode('utf-8')
+
+st.download_button(
+    label="Download CSV",
+    data=csv_data,
+    file_name="real_jobs.csv",
+    mime="text/csv",
+    icon=":material/download:",
+)
+
 # 3. ANALYZE THE DATA
 # We need to count the keywords again based on the loaded data
 keywords = {"Python": 0, "Java": 0, "Go": 0, "Spring": 0, "SQL": 0}
