@@ -6,7 +6,7 @@ st.set_page_config(page_title="Job Market Analyzer", page_icon="📊")
 st.title("📊 Remote Job Market Analyzer")
 st.badge("by: Tenzin Jhangowa")
 st.write("This dashboard analyzes the latest backend jobs from WeWorkRemotely.")
-st.link_button("WeWorkRemotely", url="https://www.weworkremotely.com")
+st.link_button("WeWorkRemotely", url="https://weworkremotely.com/remote-jobs/search?search_uuid=&sort=&term=&categories_chosen=&categories%5B%5D=18&countries_chosen=&chosen-salary_range=&skills_chosen=")
 
 # 2. LOAD THE DATA
 # We use Pandas to read the CSV file you created in the previous step
